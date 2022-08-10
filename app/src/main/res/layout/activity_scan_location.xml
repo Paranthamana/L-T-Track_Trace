@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gray"
+    tools:context="com.zebra.rfid.Activity.ScanLocationActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlLocationToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/Black">
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:src="@drawable/ic_menu" />
+
+        <TextView
+            android:id="@+id/tvOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_90sdp"
+            android:layout_toEndOf="@+id/ivMenu"
+            android:text="@string/ONLINE"
+            android:textColor="@color/Orange"
+            android:textSize="@dimen/_12sdp" />
+
+        <View
+            android:id="@+id/vDotColors"
+            android:layout_width="@dimen/_8sdp"
+            android:layout_height="@dimen/_8sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/tvOnline"
+            android:background="@drawable/dot_view_green" />
+
+        <TextView
+            android:id="@+id/tvLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="@string/LOGOUT"
+            android:textColor="@color/Orange"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvHeaderSavedStation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:layout_below="@+id/rlLocationToolbar"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:gravity="start"
+        android:text="@string/ScannedStations"
+        android:textColor="@color/Orange"
+        android:visibility="gone"/>
+
+    <!--<LinearLayout
+        android:id="@+id/llStationBG"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_below="@+id/tvHeaderSavedStation"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@drawable/bg_station1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvSavedStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/tvSavedStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:layout_below="@+id/tvHeaderSavedStation"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text=""
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textColor="@color/Green"/>
+
+
+    <Button
+        android:id="@+id/btnScanLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:background="@drawable/bg_scan_location"
+        android:text="@string/SCAN_LOCATION"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvConnectionStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:layout_below="@+id/btnScanLocation"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/Orange"/>
+
+
+
+</RelativeLayout>

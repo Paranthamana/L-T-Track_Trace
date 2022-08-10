@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White">
+
+    <LinearLayout
+        android:id="@+id/llRFIDTagText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:padding="@dimen/_4sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbRFIdTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/Black" />
+
+        <TextView
+            android:id="@+id/tvRFIDNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/tvTimeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="0.8"
+            android:maxLength="20"
+            android:text="13:12PM"
+            android:textColor="@color/Black" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/llRFIDTagText"
+        android:background="@color/lightGray" />
+
+</RelativeLayout>

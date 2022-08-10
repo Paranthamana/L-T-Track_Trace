@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zebra.rfid.Activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/ic_collinsaero"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvLoginTOAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivBanner"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:text="@string/LOGIN_TO_YOUR_ACCOUNT"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_below="@+id/tvLoginTOAccount"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:background="@drawable/bg_edittext"
+        android:hint="@string/User_Name"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:padding="@dimen/_5sdp"
+        android:textCursorDrawable="@drawable/cursor_color" />
+
+    <TextView
+        android:id="@+id/tvErrorUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Red"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_below="@+id/edtUserName"
+        android:visibility="invisible"/>
+
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_below="@+id/tvErrorUserName"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:background="@drawable/bg_edittext"
+        android:hint="@string/Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/Black"
+        android:textCursorDrawable="@drawable/cursor_color" />
+
+    <TextView
+        android:id="@+id/tvErrorPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Red"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_below="@+id/edtPassword"
+        android:visibility="invisible"/>
+
+    <CheckBox
+        android:id="@+id/cbRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPassword"
+        android:layout_marginStart="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:buttonTint="@color/Black"
+        android:text="@string/RememberMe"
+        android:textColor="@color/Black"
+        tools:ignore="UnusedAttribute" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/cbRememberMe"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:background="@drawable/bg_login_button"
+        android:text="@string/LOGIN"
+        android:textColor="@color/Blue"
+        android:textSize="@dimen/_20sdp" />
+
+    <TextView
+        android:id="@+id/tvRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:text="@string/REQUEST_RESET"
+        android:textColor="@color/Red"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvUSER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRememberMe"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:textColor="@color/Red"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

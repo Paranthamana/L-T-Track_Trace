@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">RFID APP</string>
+    <string name="action_settings">Settings</string>
+    <string name="LOGIN_TO_YOUR_ACCOUNT">Sign in</string>
+    <string name="User_Name">USER NAME</string>
+    <string name="Password">PASSWORD</string>
+    <string name="RememberMe">REMEMBER ME</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="REQUEST_RESET">REQUEST RESET</string>
+    <string name="ONLINE">ONLINE</string>
+    <string name="OFF_LINE">OFF LINE</string>
+    <string name="LOGOUT">LOGOUT</string>
+    <string name="SCAN_LOCATION">SCAN LOCATION</string>
+    <string name="BACK">BACK</string>
+    <string name="Scan">SCAN</string>
+    <string name="Work_Order">WORK ORDER</string>
+    <string name="RfIdTag">RFID TAG</string>
+    <string name="WO_ID">WO ID</string>
+    <string name="Time">TIME</string>
+    <string name="Done">DONE</string>
+    <string name="Save">SAVE</string>
+    <string name="Delete">DELETE</string>
+    <string name="Are_Sure_to_delete">Are you sure to delete the \n Work Order</string>
+    <string name="No_data_found">No scan data available</string>
+    <string name="All">All</string>
+    <string name="PushData">Clear Scanned Data</string>
+    <string name="PushAllData">Push Data</string>
+    <string name="SelectCheckBox">Please select check box to delete.</string>
+    <string name="ScanSuccess">Scan Data Saved Successfully.</string>
+    <string name="ScannedStations">Scanned stations.</string>
+    <string name="ScanNotSaved">Are you sure want to go back..?\nScan Data not Saved </string>
+    <string name="BackAlertMessage">Are you sure want to go back..? \nThere are no work orders scanned.</string>
+</resources>

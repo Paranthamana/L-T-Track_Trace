@@ -1,0 +1,4 @@
+# Referenced at C:\Users\admin\Downloads\paranthaman\projects\Agamin\l-t-track-and-trace\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:28
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at C:\Users\admin\Downloads\paranthaman\projects\Agamin\l-t-track-and-trace\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:28
+-keep class com.zebra.rfid.CommonFunctions.MyApplication { <init>(); }
